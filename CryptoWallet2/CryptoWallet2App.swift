@@ -4,7 +4,10 @@ import SwiftUI
 struct CryptoWallet2App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                HomeView()
+                    .navigationBarHidden(true)
+            }
         }
     }
 }
