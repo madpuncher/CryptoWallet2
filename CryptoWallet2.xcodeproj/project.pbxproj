@@ -18,6 +18,7 @@
 		025060EE2781FA890073C2BD /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025060ED2781FA880073C2BD /* PreviewProvider.swift */; };
 		025060F32781FB9F0073C2BD /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025060F22781FB9F0073C2BD /* CoinRowView.swift */; };
 		025060F52781FCEB0073C2BD /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025060F42781FCEB0073C2BD /* Double.swift */; };
+		025060FF2782133E0073C2BD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025060FE2782133E0073C2BD /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		025060ED2781FA880073C2BD /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		025060F22781FB9F0073C2BD /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		025060F42781FCEB0073C2BD /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		025060FE2782133E0073C2BD /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +67,8 @@
 		02422CE62780FF2D00A58341 /* CryptoWallet2 */ = {
 			isa = PBXGroup;
 			children = (
-				025060DD2781BE710073C2BD /* Home */,
 				02422CE72780FF2D00A58341 /* CryptoWallet2App.swift */,
+				025060DD2781BE710073C2BD /* Home */,
 				025060E82781F8A70073C2BD /* Models */,
 				02422D152781B79D00A58341 /* Extensions */,
 				02422CEB2780FF2E00A58341 /* Assets.xcassets */,
@@ -114,6 +116,7 @@
 		025060DF2781BE9B0073C2BD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				025060FE2782133E0073C2BD /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 				025060F32781FB9F0073C2BD /* CoinRowView.swift in Sources */,
 				025060EA2781F8D00073C2BD /* Coin.swift in Sources */,
 				02422CEA2780FF2D00A58341 /* HomeView.swift in Sources */,
+				025060FF2782133E0073C2BD /* HomeViewModel.swift in Sources */,
 				02422CE82780FF2D00A58341 /* CryptoWallet2App.swift in Sources */,
 				025060E42781C22B0073C2BD /* CircleButtonAnimationView.swift in Sources */,
 				025060E22781BF7C0073C2BD /* CircleButtonView.swift in Sources */,
