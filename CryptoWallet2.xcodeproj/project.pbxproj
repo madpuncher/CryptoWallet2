@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02055F1927832612005EB5D1 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02055F1827832612005EB5D1 /* CoinDataService.swift */; };
 		02422CE82780FF2D00A58341 /* CryptoWallet2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02422CE72780FF2D00A58341 /* CryptoWallet2App.swift */; };
 		02422CEA2780FF2D00A58341 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02422CE92780FF2D00A58341 /* HomeView.swift */; };
 		02422CEC2780FF2E00A58341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02422CEB2780FF2E00A58341 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02055F1827832612005EB5D1 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 		02422CE42780FF2D00A58341 /* CryptoWallet2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02422CE72780FF2D00A58341 /* CryptoWallet2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWallet2App.swift; sourceTree = "<group>"; };
 		02422CE92780FF2D00A58341 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02055F1727832606005EB5D1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				02055F1827832612005EB5D1 /* CoinDataService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		02422CDB2780FF2D00A58341 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				02422CE72780FF2D00A58341 /* CryptoWallet2App.swift */,
+				02055F1727832606005EB5D1 /* Networking */,
 				025060DD2781BE710073C2BD /* Home */,
 				025060E82781F8A70073C2BD /* Models */,
 				02422D152781B79D00A58341 /* Extensions */,
@@ -219,6 +230,7 @@
 				025060EE2781FA890073C2BD /* PreviewProvider.swift in Sources */,
 				025060F52781FCEB0073C2BD /* Double.swift in Sources */,
 				02422D172781B7A900A58341 /* Color.swift in Sources */,
+				02055F1927832612005EB5D1 /* CoinDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
