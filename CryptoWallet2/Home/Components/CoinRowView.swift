@@ -21,18 +21,6 @@ struct CoinRowView: View {
     }
 }
 
-struct CoinRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            CoinRowView(coin: dev.coin, showHoldingsColumn: true)
-                .previewLayout(.sizeThatFits)
-            CoinRowView(coin: dev.coin, showHoldingsColumn: true)
-                .previewLayout(.sizeThatFits)
-                .preferredColorScheme(.dark)
-        }
-    }
-}
-
 extension CoinRowView {
     private var leftColumn: some View {
         HStack(spacing: 0) {
@@ -41,7 +29,7 @@ extension CoinRowView {
                 .foregroundColor(.theme.secondaryText)
                 .frame(minWidth: 30)
             
-            Circle()
+            CoinImageView(coin: coin)
                 .frame(width: 30, height: 30)
             
             Text(coin.symbol.uppercased())
@@ -73,5 +61,17 @@ extension CoinRowView {
                 )
         }
         .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+    }
+}
+
+struct CoinRowView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            CoinRowView(coin: dev.coin, showHoldingsColumn: true)
+                .previewLayout(.sizeThatFits)
+            CoinRowView(coin: dev.coin, showHoldingsColumn: true)
+                .previewLayout(.sizeThatFits)
+                .preferredColorScheme(.dark)
+        }
     }
 }
