@@ -25,6 +25,7 @@
 		0280B7522785DC3800F5DC36 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280B7512785DC3800F5DC36 /* CoinImageView.swift */; };
 		0280B7542785DD2A00F5DC36 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280B7532785DD2A00F5DC36 /* CoinImageService.swift */; };
 		0280B7572785DE1700F5DC36 /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280B7562785DE1700F5DC36 /* CoinImageViewModel.swift */; };
+		0280B75E278C5FD300F5DC36 /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0280B75D278C5FD300F5DC36 /* LocalFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		0280B7512785DC3800F5DC36 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		0280B7532785DD2A00F5DC36 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		0280B7562785DE1700F5DC36 /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
+		0280B75D278C5FD300F5DC36 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				0280B7492785B3C400F5DC36 /* NetworkingManager.swift */,
+				0280B75D278C5FD300F5DC36 /* LocalFileManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				025060EA2781F8D00073C2BD /* Coin.swift in Sources */,
 				02422CEA2780FF2D00A58341 /* HomeView.swift in Sources */,
 				025060FF2782133E0073C2BD /* HomeViewModel.swift in Sources */,
+				0280B75E278C5FD300F5DC36 /* LocalFileManager.swift in Sources */,
 				02422CE82780FF2D00A58341 /* CryptoWallet2App.swift in Sources */,
 				0280B7522785DC3800F5DC36 /* CoinImageView.swift in Sources */,
 				0280B74C2785B65100F5DC36 /* NetworkingError.swift in Sources */,

@@ -7,8 +7,24 @@ class CoinImageService {
     
     var imageCancellable = Set<AnyCancellable>()
     
-    init(urlImage: String) {
-        getCoinImage(urlString: urlImage)
+    private let fileManager = LocalFileManager.shared
+    private let folderName = "coin_images"
+    private let coin: Coin
+    private let imageName: String
+    
+    init(coin: Coin) {
+        self.coin = coin
+        self.imageName = coin.id
+        getCoinImageFromFM()
+    }
+    
+    private func getCoinImageFromFM() {
+        if let savedImage = fileManager.getImage(imageName: coin.id,
+                                            folderName: folderName) {
+            image = savedImage
+        } else {
+            getCoinImage(urlString: coin.image)
+        }
     }
     
     private func getCoinImage(urlString: String) {
@@ -20,7 +36,13 @@ class CoinImageService {
             }
             .sink(receiveCompletion: NetworkingManager.handleCompletion,
                   receiveValue: { [weak self] value in
-                self?.image = value
+                guard
+                    let self = self,
+                    let downloadedImage = value else { return }
+                self.image = value
+                self.fileManager.saveImage(image: downloadedImage,
+                                            imageName: self.imageName,
+                                            folderName: self.folderName)
             })
             .store(in: &imageCancellable)
     }
