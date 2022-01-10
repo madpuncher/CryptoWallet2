@@ -47,3 +47,4 @@ class CoinImageService {
             .store(in: &imageCancellable)
     }
 }
+

@@ -13,6 +13,8 @@ struct HomeView: View {
             VStack {
                 homeHeader
                 
+                SearchBarView(searchText: $viewModel.searchText)
+                
                 columnTitles
                 
                 if !showPortfolio {
@@ -27,6 +29,9 @@ struct HomeView: View {
                 
                 Spacer(minLength: 0)
             }
+        }
+        .onTapGesture {
+            UIApplication.shared.endEditing()
         }
     }
 }
